@@ -1,0 +1,152 @@
+    <main class="container" id="register-main">
+
+        <h2 class="display-6">Thank you for your interest in The Fashion Pet!</h2>
+        <p>We currently have <regnum id=regnum></regnum> <petpl></petpl> registered at our salon.</p>
+        <p>We would like to thank the owners of <petnames id="petnames"></petnames>for trusting their wonderful <petpl></petpl> to us!</p>
+        <p id="profits"></p>
+        <form>
+          <fieldset>
+            <legend>Pet Information</legend>
+
+
+                <label for="petName">Name: </label>
+                <input type="text" name="pet-name" id="pet-name" class="form-control">
+
+
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age" class="form-control">
+
+
+                <label for="gender">Gender:</label>
+                <input type="text" name="gender" id="gender" class="form-control">
+
+                <label for="type">Type</label>
+                <select name="type" id="pet-type" class="form-select">
+                  <option value="Dog">🐶 Dog</option>
+                  <option value="Cat">🐱 Cat</option>
+                  <option value="Bird">🐦 Bird</option>
+                  <option value="Other">🐾 Other</option>
+                </select>
+                </select>
+
+                <label for="breed">Breed: </label>
+                <input type="text" name="breed" id="breed" class="form-control">
+
+
+                <label for="service">Service requested: </label>
+                <select name="service" id="service" class="form-select">
+                  <option value="Grooming">Grooming</option>
+                  <option value="Bath">Bath</option>
+                  <option value="Nails Cut">Nails Cut</option>
+                  <option value="Full Service">Full Service</option>
+                </select>
+
+
+          </fieldset>
+          <fieldset>
+            <legend>Owner Information</legend>
+            <div class="inputs">
+              <label for="owner-name">Name: </label>
+              <input type="text" name="owner-name" id="owner-name" class="form-control">
+              <label for="phone">Phone number: </label>
+              <input type="tel" name="phone" id="phone" class="form-control">
+              <label for="address">Street Address:</label>
+              <input type="text" name="address" id="address" class="form-control">
+              <label for="city">City:</label>
+              <input type="text" name="city" id="city" class="form-control">
+              <div class="state-zip">
+              <label for="state" id ="state-label">State:</label>
+              <label for="zip" id="zip-label">ZIP:</label>
+              <select name="state" id="state" class="form-control">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AR">AR</option>	
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>	
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>	
+                <option value="MS">MS</option>
+                <option value="MT" selected>MT</option>
+                <option value="NC">NC</option>	
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>			
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>	
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+              </select>
+              <input type="text" name="zip" id="zip" class="form-control">
+              </div>
+            </div>
+          </fieldset>
+
+            <button class="btn btn-primary" type = "button" id="register-btn">Register</button>
+
+        </form>
+
+        <div id="pets"></div> 
+        <div id="num-pets">
+          <div id="dog-num-cont"><p id="dog-num"></p></div>
+          <div id="cat-num-cont"><p id="cat-num"></p></div>
+          <div id="bird-num-cont"><p id="bird-num"></p></div>
+          <div id="other-num-cont"><p id="other-num"></p></div>
+        <div id="test-load"></div>
+        </div>  
+        <div class="search">
+          <input type="search" name="search" id="searchPet" class="form-control search-input" placeholder="Search by Name, Service, or Type">
+          <button id="search-btn" class="btn btn-warning">Search</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th id="table-name">Name</th>
+              <th id="table-age">Age</th>
+              <th id="table-gender">Gender</th>
+              <th id="table-type">Type</th>
+              <th id="table-breed">Breed</th>
+              <th id="table-service">Service</th>
+              <th id="table-price">Price</th>
+              <th id="table-owner">Owner</th>
+              <th id="table-phone">Phone</th>
+              <th id="table-address">Address</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="pets-table"></tbody>
+        </table>      
+    </main>

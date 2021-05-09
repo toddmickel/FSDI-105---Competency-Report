@@ -1,0 +1,61 @@
+:root {
+    --header: #de7853;
+    --tablehead: #53abde;
+    --table1: #53d7de;
+    --table2: #a4d7de;
+    --main: #ffd65c;
+    --footer: #9d53de;
+    --textbox: #f1e787;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--main);
+}
+
+main {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--textbox);
+    border: 2px solid var(--header);
+    padding: 2rem;
+}
+
+header {
+    background-color: var(--header);
+}
+
+.nav {
+    background-color: var(--footer);
+}
+
+.nav .nav-item .nav-link {
+    color:white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.display-1 {
+    padding:.5rem 0 0 1rem;
+}
+
+footer {
+    background-color: var(--footer);
+    width:100%;
+}
+
+footer p{
+    text-align: center;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    color:white;
+}
+
+#mapid {
+    height: 300px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    border: 5px solid darkgrey;
+}

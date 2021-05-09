@@ -1,0 +1,33 @@
+
+
+#about-main img {
+    position: absolute;
+    left: auto;
+    right: auto;
+    height: 200px;
+    width: 300px;
+    border: 2px solid var(--header);
+}
+
+.ss-container {
+    max-width: 500px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+}
+
+#contact-header {
+    margin-top: 2rem;
+}
+
+#contact-div {
+    width:75%;
+    margin: auto;
+    border: 2px solid var(--header);
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+#feedback-btn-div {
+    margin-top: 2rem;
+    text-align: center;
+}
